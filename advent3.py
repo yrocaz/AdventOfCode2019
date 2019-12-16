@@ -61,20 +61,3 @@ for i in line_intersections:
     steps.append(lines1.index(i) + lines2.index(i))
 
 print(min(steps))
-
-# t1 = "R75,D30,R83,U83,L12,D49,R71,U7,L72"
-# t2 = "U62,R66,U55,R34,D71,R55,D58,R83"
-# # t1 = "R8,U5,L5,D3"
-# # t2 = "U7,R6,D4,L4"
-# test1 = t1.split(',')
-# test2 = t2.split(',')
-# tpath1 = [(0,0)] 
-# tpath2 = [(0,0)]
-# tlines1 = [(0,0)]
-# tlines2 = [(0,0)]
-# Path(test1, tpath1, tlines1)
-# Path(test2, tpath2, tlines2)
-# tline_intersections = list(set(tlines1[1:]) & set(tlines2[1:]))
-# distance = min([abs(x)+abs(y) for x,y in tline_intersections])
-
-

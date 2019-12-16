@@ -45,6 +45,3 @@ def part2(multis):
     return pw_count2
 
 part2(multis)
-
-# 890 is too high.
-# 608 is wrong

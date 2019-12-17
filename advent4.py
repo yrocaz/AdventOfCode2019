@@ -3,6 +3,7 @@
 
 # Part 1:
 # How many different passwords within the range given in your puzzle input meet these criteria?
+from itertools import groupby
 
 input = [271973, 785962] # 271973-785961(+1)
 
@@ -28,7 +29,7 @@ def part1(input1, input2):
                                     multis.append(pw)
     return pw_count1
 
-part1(input[0], input[1])
+part1(input[0], input[1]) #925
 
 ### part 2
 '''An Elf just remembered one more important detail: 
@@ -44,4 +45,4 @@ def part2(multis):
             pw_count2 += 1
     return pw_count2
 
-part2(multis)
+part2(multis) # 607

@@ -16,7 +16,7 @@ class Instruction(object):
 def OpcodeMode(opcode, opcodes, mode1=None, mode2=None, mode3=None):
     # paramter modes
     if mode1 == None or mode1 == 0:     
-        param1 = diagnostic[opcodes + 1]    # position mode - value @ the position refrenced
+        param1 = diagnostic[opcodes + 1]    # position mode - value @ the position referenced
     else:
         param1 = opcodes + 1                # immediate mode - value @ that position
     if mode2 == None or mode2 == 0:
